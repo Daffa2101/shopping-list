@@ -9,7 +9,7 @@
     <h5>Class:</h5>
     <p>{{class}}</p>
 
-    <table>
+    <table border='1' cellpadding='20'>
     <tr>
         <th>Name</th>
         <th>Price</th>
@@ -36,6 +36,15 @@
         Add New Product
     </button>
 </a>
+
+<a href="{% url 'main:logout' %}">
+    <button>
+        Logout
+    </button>
+</a>
+
+<h5>Sesi terakhir login: {{ last_login }}</h5>
+
 
 
 {% endblock   %}
